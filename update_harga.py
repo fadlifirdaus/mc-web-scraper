@@ -29,6 +29,7 @@ def updatePrice(kode_internal,mitra, biller, harga_jual, harga_enduser, harga_f1
         x = i.find_elements_by_tag_name("td")
         if x[2].text == mitra and x[5].text == kode_internal and x[4].text == biller:
             i.find_element(By.XPATH,"./td/div/button[@title='Ubah Produk Cluster']").click()
+            time.sleep(1)
             hj = driver.find_element(By.ID,"value")
             driver.execute_script(f"arguments[0].value = '{harga_jual}';",hj)
             he =driver.find_element(By.ID,"list_value")
