@@ -49,15 +49,15 @@ while True:
     if not driver.current_url == "http://117.102.115.218:8031/web-teleshoph2h-v3/login.html":
         driver.get("http://117.102.115.218:8031/web-teleshoph2h-v3/teleshop/master/produk_cluster_url/core/fb925yXGJMNH15U8efJYWEqOLT2B6JXGTUHLtgztgh2mnLQw") 
         time.sleep(2)
-        for x in list_product:
-            kode_internal = list_product[x]['kode_internal']
-            mitra = list_product[x]['mitra']
-            biller = list_product[x]['biller']
-            harga_jual = list_product[x]['harga_jual']
-            harga_enduser = list_product[x]['harga_enduser']
-            f1 = list_product[x]['f1']
-            f2 = list_product[x]['f2']
-            f3 = list_product[x]['f3']
+        for dt in list_product:
+            kode_internal = list_product[dt]['kode_internal']
+            mitra = list_product[dt]['mitra']
+            biller = list_product[dt]['biller']
+            harga_jual = list_product[dt]['harga_jual']
+            harga_enduser = list_product[dt]['harga_enduser']
+            f1 = list_product[dt]['f1']
+            f2 = list_product[dt]['f2']
+            f3 = list_product[dt]['f3']
             updatePrice(kode_internal,mitra,biller,harga_jual,harga_enduser,f1,f2,f3)
         break
 driver.close()
