@@ -8,6 +8,8 @@ import time
 df = pd.read_csv(f"product.csv")
 list_product = df.to_dict('index')
 
+
+print("Open/Close Produk Translasi")
 print("Silakan pilih function :")
 print("1.Close Produk")
 print("2.Open Produk")

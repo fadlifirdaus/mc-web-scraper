@@ -1,0 +1,16 @@
+{
+    "urls": [
+        {
+            "name": "tele-h2h",
+            "url": "https://telepulsa.com"
+        },
+        {
+            "name": "tele-chandra",
+            "url": "https://telepulsa.com"
+        },
+        {
+            "name": "tele-dana",
+            "url": "https://telepulsa.com"
+        }
+    ]
+}
